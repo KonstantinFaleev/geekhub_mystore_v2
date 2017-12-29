@@ -23,7 +23,7 @@
 
   <div class="field">
     <%= form.label :images %>
-    <%= form.text_field :images, id: :product_images %>
+    <%= form.file_field :images, id: :product_images, multiple: true %>
   </div>
 
   <div class="field">

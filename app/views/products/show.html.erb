@@ -12,7 +12,11 @@
 
 <p>
   <strong>Images:</strong>
-  <%= @product.images %>
+  <% @product.images.each do |i| %>
+    <li data-thumb="<%= i.url(:mini) %>" data-original="<%= i.url %>">
+      <%= image_tag(i.url(:thumb)) %>
+    </li>
+  <% end %>
 </p>
 
 <p>
