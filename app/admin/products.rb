@@ -6,9 +6,7 @@ ActiveAdmin.register Product do
       selectable_column
       id_column
       column :title
-      column :price do |product|
-        number_to_currency(product.price, unit: 'грн', format: '%n %u')
-      end
+      column :price
       column :description
       column :images do |product|
         div class: 'image-list' do
@@ -26,9 +24,7 @@ ActiveAdmin.register Product do
       attributes_table do
         row :title
         row :description
-        row :price do |product|
-          number_to_currency(product.price, unit: 'грн', format: '%n %u')
-        end
+        row :price
         row :images do
           div do
             product.images.each do |image|
