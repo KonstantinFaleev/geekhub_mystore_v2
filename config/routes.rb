@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'store#index', as: 'store_index'
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   resources :products
