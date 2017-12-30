@@ -5,12 +5,13 @@
         <% cache product do %>
     <div class="entry">
       <td><%= link_to product_path(product) do %>
-            <% image_tag(product.images[0] ? product.images[0].url(:thumb) : image_url('no-image.png'), width: 250) %>
+            <% image_tag(product.images[0] ? product.images[0].url(:thumb) : image_url('no-photo.png'), width: 250) %>
         <% end %>
       <h3><%= product.title %></h3>
       <%= sanitize(product.description) %>
       <div class="price_line">
         <span class="price"><%= number_to_currency(product.price) %></span>
+        <%= button_to 'Add to Cart', line_items_path(product_id: product) %>
       </div>
     </div>
         <% end %>

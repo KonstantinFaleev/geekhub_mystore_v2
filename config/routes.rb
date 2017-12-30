@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :line_items
+  resources :carts
   root 'store#index', as: 'store_index'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
