@@ -43,7 +43,7 @@ body, body > p, body > ol, body > ul, body > td {margin: 8px !important}
 }
 
 #notice:empty {
-  display: none
+  display: none;
 }
 
 #columns {
@@ -56,10 +56,10 @@ body, body > p, body > ol, body > ul, body > td {margin: 8px !important}
     flex: 1;
   }
 
+  //
   #side {
     padding: 1em 2em;
     background: #141;
-
     form, div {
       display: inline;
     }
@@ -70,15 +70,14 @@ body, body > p, body > ol, body > ul, body > td {margin: 8px !important}
 
     #cart {
       font-size: smaller;
-      color: white;
+      color:     white;
 
       table {
-        border-top: 1px dotted #595;
+        border-top:    1px dotted #595;
         border-bottom: 1px dotted #595;
         margin-bottom: 10px;
-        }
       }
-
+    }
     ul {
       padding: 0;
 
@@ -92,6 +91,7 @@ body, body > p, body > ol, body > ul, body > td {margin: 8px !important}
       }
     }
   }
+  //
 }
 
 @media all and (max-width: 800px) {
@@ -108,4 +108,51 @@ body, body > p, body > ol, body > ul, body > td {margin: 8px !important}
   #banner .title {
     display: none;
   }
+}
+
+//
+.depot_form {
+  fieldset {
+    background: #efe;
+
+    legend {
+      color: #dfd;
+      background: #141;
+      font-family: sans-serif;
+      padding: 0.2em 1em;
+    }
+
+    div {
+      margin-bottom: 0.3em;
+    }
+  }
+
+  form {
+    label {
+      width: 5em;
+      float: left;
+      text-align: right;
+      padding-top: 0.2em;
+      margin-right: 0.1em;
+      display: block;
+    }
+
+    select, textarea, input {
+      margin-left: 0.5em;
+    }
+
+    .submit {
+      margin-left: 4em;
+    }
+
+    br {
+      display: none;
+    }
+  }
+}
+//
+
+.locale {
+  float: right;
+  margin: -0.25em 0.1em;
 }
