@@ -1,4 +1,5 @@
 <p id="notice"><%= notice %></p>
+<%= paginate @products %>
 <h1>Catalog Store</h1>
 <% cache @products do %>
   <% @products.each do |product| %>
@@ -17,3 +18,4 @@
         <% end %>
     <% end %>
 <% end %>
+<%= paginate @products %>
