@@ -18,7 +18,7 @@
 
   <div class="field">
     <%= form.label :email %>
-    <%= form.text_field :email, id: :order_email, size: 40 %>
+    <%= form.email_field :email, id: :order_email, size: 40 %>
   </div>
 
   <div class="field">
@@ -28,7 +28,7 @@
 
   <div class="field">
     <%= form.label :comment %>
-    <%= form.text_field :comment, id: :order_comment, rows: 3, cols: 40 %>
+    <%= form.text_area :comment, id: :order_comment, rows: 3, cols: 40 %>
   </div>
 
   <div class="actions">
