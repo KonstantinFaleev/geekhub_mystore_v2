@@ -47,3 +47,32 @@
     background: #73f859;
   }
 }
+
+.cart-form {
+  .quantity {
+    .minus, .plus {
+      display: inline-block;
+      font-size: 30px;
+      cursor: pointer;
+      user-select: none;
+      opacity: 0.7;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    .input-quantity {
+      display: inline;
+      text-align: center;
+      max-width: 80px;
+      font-size: 20px;
+
+      &::-webkit-inner-spin-button,
+      &::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+  }
+}

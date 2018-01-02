@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :orders
+  resources :orders, only: [:new, :create]
   resources :line_items
   resources :carts
   root 'store#index', as: 'store_index'
