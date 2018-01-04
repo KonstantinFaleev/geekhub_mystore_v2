@@ -63,7 +63,7 @@ Rails.application.configure do
   #config.action_mailer.perform_caching = false
   config.action_mailer.delivery_method = :sendmail
   config.action_mailer.perform_deliveries = true
-  config.action_mailer.default_url_option = { host: '95.85.20.170'}
+  config.action_mailer.default_url_option = { host: '37.139.11.234'}
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
