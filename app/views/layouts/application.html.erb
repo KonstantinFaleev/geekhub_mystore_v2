@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Geekhub Mystore</title>
+    <title><%= if content_for?(:title) then yield(:title) + ' | ' end %>Geekhub Mystore</title>
     <%= csrf_meta_tags %>
-
+    <%= display_meta_tags %>
+    <meta name='description'
+          content='<%= yield_meta_tag(:description, 'Default description') %>' />
+    <meta name='keywords'
+          content='<%= yield_meta_tag(:keywords, 'defaults,ruby,rails') %>' />
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
