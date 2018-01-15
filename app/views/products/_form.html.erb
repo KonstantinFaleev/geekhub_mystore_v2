@@ -31,6 +31,10 @@
     <%= form.text_field :price, id: :product_price %>
   </div>
 
+  <div class="field">
+    <%= select_tag(:category_id, options_from_collection_for_select(Category.all, :id, :name), include_blank: "select category") %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
