@@ -21,7 +21,7 @@ class ProductsController < ApplicationController
 
   # GET /products/1/edit
   def edit
-    @categories = Category.all.map{|c| [ c.name, c.id ] }
+    @categories = Category.all.map{ |c| [c.name, c.id] }
   end
 
   # POST /products
