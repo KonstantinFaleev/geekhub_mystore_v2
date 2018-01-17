@@ -11,6 +11,10 @@ class ProductsController < ApplicationController
   # GET /products/1
   # GET /products/1.json
   def show
+    set_meta_tags title: 'Member Login',
+                  description: 'Member login page.',
+                  keywords: 'Site, Login, Members'
+    #@category = Category.find(params[:category_id])
   end
 
   # GET /products/new

@@ -14,7 +14,7 @@
                              length: 80) %></dd>
           </dl>
         </td>
-        <td><%= link_to Category.find(product.category_id).name, category_path(product.category_id) %></td>
+        <td><%#= link_to Category.find(product.category_id).name, category_path(product.category_id) %></td>
         <td class="list_actions">
           <%= link_to 'Show', product %><br/>
           <%= link_to 'Edit', edit_product_path(product) %><br/>
