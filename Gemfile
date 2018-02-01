@@ -69,3 +69,4 @@ gem 'devise'
 gem 'kaminari'
 gem 'meta-tags'
 gem 'ancestry'
+gem 'rubocop', require: false
